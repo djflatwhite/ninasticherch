@@ -195,7 +195,14 @@ a:hover {
     width: 100vw;
   }
   .projects {
-    width: 100vw;
+    width: 100%;
+    margin-right: 10px;
+  }
+  .project-text {
+    margin-right: 10px;
+  }
+  .project-images {
+    margin-right: 10px;
   }
   .project-img {
     height: 100%;
