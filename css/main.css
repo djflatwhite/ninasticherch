@@ -1,0 +1,223 @@
+/* embed font family (put font in assets/fonts folder) */
+@font-face {
+  font-family: "hallo";
+  src: url("/assets/fonts/RhymesDisplayTrial-Thin.woff2") format("woff2");
+}
+/* style changes */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* change font */
+  font-weight: bold;
+}
+p, a {
+  font-size: 13px; /* change font size */
+  margin-bottom: 4px; /* change bottom abstand text */
+}
+
+.allrights {
+  position: fixed;
+  bottom: 2px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  font-family: Helvetica;
+  font-weight: light;
+  font-size: 8px;
+  padding-left: 3px;
+  display: none;
+}
+
+.previous {
+  position: fixed;
+  text-align: left;
+}
+
+.next {
+  position: fixed;
+  text-align: right;
+}
+#big-black {
+  background-color: black;
+  width: 100vw; 
+  height: 100vh;
+}
+.menu {
+  margin-left: 25px;
+}
+
+.big-text {
+  font-size: 1vh; /* change font size for fullscreen */
+  color: rgb(0, 255, 8); /* change link color */
+}
+a {
+  color: rgb(0, 255, 8); /* change link color */
+  text-decoration: none; /* change link decoration */
+}
+a:hover {
+  filter: blur(0.1rem); /* change link animation (delete if you don't want any)*/
+}
+#menu-header:hover {
+  filter: blur(0.1rem); /* change menu header animation (delete if you don't want any)*/
+  color: rgb(0, 255, 8); /* change menu header animation color (delete if you don't want any)*/
+}
+.big-text:hover {
+  filter: blur(0.1rem); /* change fullscreen text animation (delete if you don't want any)*/
+  color: rgb(0, 255, 8); /* change fullscreen text animation color (delete if you don't want any)*/
+}
+
+
+
+
+/* DONT TOUCHHHHHHHH */
+/* DONT TOUCHHHHHHHH */
+/* DONT TOUCHHHHHHHH */
+/* DONT TOUCHHHHHHHH */
+/* DONT TOUCHHHHHHHH */
+/* elements */
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+a {
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+a:hover {
+  cursor: pointer;
+  filter: blur(0.1rem);
+}
+.big {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  display: block;
+  overflow: hidden;
+  background-color: black;
+}
+.big-div {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.big-video {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transform-origin: center;
+  /* background-color: black; */
+  pointer-events: none;
+  /* mix-blend-mode: multiply; */
+}
+.big-text {
+  text-align: center;
+  /* mix-blend-mode: multiply; */
+  margin: 0;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+  display: inline-block;
+  user-select: none;
+  transform: rotate(0);
+}
+.big-text:hover {
+  cursor: pointer;
+}
+.index {
+  width: 100%;
+  margin: 10px;
+}
+#index {
+  display: none;
+}
+.menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+  left: 10px;
+}
+#menu-header {
+  color: rgb(0, 255, 8);
+  user-select: none;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+#menu-header:hover {
+  cursor: pointer;
+}
+#menu-hidden {
+  display: none;
+}
+.menu-images {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: scroll;
+  height: 180px;
+}
+.menu-img {
+  max-width: 100%;
+  height: 100%;
+}
+.projects {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  margin: 10px;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+}
+.project-text {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.project-images {
+  margin-left: 26px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  overflow-x: scroll;
+  margin-bottom: 15px;
+  height:380px;
+}
+.project-img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.project-video {
+  max-width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.project-img:hover {
+  cursor: pointer;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  .project-img {
+    height: 100%;
+    max-width: 100%; /* change mobile image size */
+  }
+  .project-video {
+    height: 100%;
+    max-width: 100%; /* change mobile image size */
+  }
+  .menu {
+    line-height: 120%; /* change mobile menu line height */
+  }
+  .big-text {
+    font-size: 1.5vh; /* change mobile font size for fullscreen */
+    transform: rotate(-90deg);
+  }
+  .big-video {
+    transform: rotate(-90deg);
+  }
+}
