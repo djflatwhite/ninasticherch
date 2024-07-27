@@ -22,6 +22,7 @@ p, a {
   font-size: 8px;
   padding-left: 3px;
   display: none;
+  overflow-x: hidden;
 }
 #big-black {
   background-color: black;
@@ -115,6 +116,7 @@ a:hover {
 .index {
   width: 100%;
   margin: 10px;
+  overflow-x: hidden;
 }
 #index {
   display: none;
@@ -124,7 +126,9 @@ a:hover {
   display: flex;
   flex-direction: column;
   z-index: 99;
-  left: 10px;
+  left: 2%;
+  overflow-x: hidden;
+  width: 100%;
 }
 #menu-header {
   color: rgb(0, 255, 8);
@@ -137,6 +141,7 @@ a:hover {
 }
 #menu-hidden {
   display: none;
+  width: 98%;
 }
 .menu-images {
   display: flex;
@@ -154,7 +159,9 @@ a:hover {
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-  margin: 10px;
+  margin: 2%;
+  width: 100%;
+  overflow-x: hidden;
 }
 .project {
   display: flex;
@@ -192,17 +199,13 @@ a:hover {
 /* mobile */
 @media (max-width: 600px) {
   .menu {
-    width: 100vw;
+    width: 96%;
   }
   .projects {
-    width: 100%;
-    margin-right: 10px;
+    width: 96%;
   }
-  .project-text {
-    margin-right: 10px;
-  }
-  .project-images {
-    margin-right: 10px;
+  #menu-hidden {
+    width: 93%;
   }
   .project-img {
     height: 100%;
