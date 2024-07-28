@@ -67,6 +67,7 @@ function nextBig() {
 }
 function goToIndex() {
   document.body.style.overflow = 'visible'
+  document.body.style.overflowX = 'hidden'
   index.style.display = 'initial'
   bigIMG.style.display = 'none'
   rights.style.display = 'initial'
